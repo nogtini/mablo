@@ -3,9 +3,13 @@ Mablo, a Material Design blog
 
 ###To-Do
 Strip markdown from post summary on front page
+
 Limit size of post summary
+
 SEO
+
 Tags
+
 Comments
 
 ###Packages Used
