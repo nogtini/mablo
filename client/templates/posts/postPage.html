@@ -1,0 +1,49 @@
+<template name="postPage">
+  <div class="row">
+    <div class="col s12 m12 l10 offset-l1">
+      <div class="card">
+        <div class="post-date-header row no-margin card-content teal darken-2 grey-text text-lighten-3">
+            <span>{{dateCreated}}</span><a href="/"><i class="white-text right mdi-navigation-arrow-back"></i></a>
+        </div>
+          <div class="z-depth-1 card-content teal white-text">
+            <span class="card-title">{{title}}</span>
+          </div>
+        <div class="card-content no-padding">
+          <div class="row">
+            <div class="rendered-markdown">
+{{#markdown}}
+{{addMarkdown}}
+{{/markdown}}
+          </div>
+      <!-- name card and sharing -->
+      <div class="col s12 m12">
+        <!-- center-aligned social sharing -->
+        <div class="center-align">
+          {{> shareit}}
+        </div>
+        <div class="card-panel teal-grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="{{admin.personalPhotoUrl}}" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s9">
+              <span class="grey-text text-darken-3">
+                {{admin.fewWordsSignoff}}
+              </span>
+            </div>
+            <div class="col s1">
+              <a class="red-text text-lighten-2" href='{{admin.facebookProfileUrl}}'><i class="fa fa-facebook-square fa-lg"></i></a>
+              <a class="red-text text-lighten-2" href='{{admin.twitterProfileUrl}}'><i class="fa fa-twitter fa-lg"></i></a>
+              <a class="red-text text-lighten-2" href='{{admin.dribbbleProfileUrl}}'><i class="fa fa-dribbble fa-lg"></i></a>
+              <a class="red-text text-lighten-2" href='{{admin.githubProfileUrl}}'><i class="fa fa-github fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

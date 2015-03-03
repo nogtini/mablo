@@ -1,0 +1,109 @@
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+}
+
+/*pad displayed markdown*/
+.rendered-markdown{
+  padding: 20px;
+}
+
+/*pad sibling paragraphs*/
+.rendered-markdown p ~ p{
+  padding-top:20px;
+}
+
+/*Article view styles*/
+.article-left-align{
+  text-align:left;
+}
+.article-preview{
+  font-weight:200 !important;
+}
+
+/*overreaching basic styles*/
+body{
+  background-color: #eee;
+}
+
+h6, h5, h4, h3, h2, h1{
+  font-weight:300;
+}
+
+.card{
+  background-color: #FAFAFA;
+  color: #424242;
+}
+
+/*color styles*/
+.teal-test{
+  background-color: #FAFAFA;
+}
+
+.teal-grey{
+  background-color: #ECEFF0;
+}
+
+/*helper classes for ridding materialize margin/paddings*/
+.no-margin{
+  margin-top:0px !important;
+  margin-bottom:0px !important;
+}
+
+.no-padding{
+  padding:0px !important;
+}
+
+/*adjustments for materialize component margin/paddings to adhere to Material Principles*/
+div.row.valign-wrapper{
+  margin-bottom:0px;
+}
+
+div.input-field.col{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+/*style textarea for edit/add*/
+textarea.markdown{
+  outline: none;
+  resize: both;
+  padding-bottom: 0px;
+  font-family: "consolas";
+}
+
+
+/*markdown rendered code fonts*/
+code{
+  font-family: "consolas";
+}
+
+input[type=text].edit-post-title{
+  font-size: 24px;
+}
+
+.post-date-header{
+  font-weight:300;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+/*addPost.html*/
+.add-post-input{
+  padding-left:10px;
+  padding-right:10px;
+}

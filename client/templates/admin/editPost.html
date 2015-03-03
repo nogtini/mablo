@@ -1,0 +1,50 @@
+<template name="editPost">
+  <div class="row">
+    <div class="col s12 m12 l10 offset-l1">
+      <div class="card">
+        <div class="z-depth-1 no-margin teal">
+          <div class="card-content white-text">
+            <span class="card-title">Edit Post</span>
+          </div>
+        </div>
+        <div class="card-content no-padding">
+          <div class="row no-margin">
+            <form class="col s12">
+              <br>
+              <div class="row no-margin">
+                <div class="input-field col s12">
+                  <input name="title" id="post_title" value="{{title}}" type="text" class="edit-post-title">
+                  <label for="post_title">Post Title</label>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea name="addMarkdown" id="edit_markdown" class="markdown materialize-textarea">
+{{addMarkdown}}
+</textarea>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <button class="no-margin btn waves-effect waves-light" type="submit" name="action">Save
+                    <i class="mdi-content-save right"></i>
+                  </button>
+                  <a href="/admin"><button class="red lighten-2 no-margin btn waves-effect waves-light" name="action">Cancel
+                    <i class="mdi-navigation-cancel right"></i>
+                  </button></a>
+                  <a id="delete" class="right modal-trigger" href="#modal1"><i class="small grey-text text-darken-4 mdi-action-delete"></i></a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- delete modal -->
+  <div class="col m8">
+    <div id="modal1" class="center-align modal">
+      <a id="deleteConfirm"><i class="mdi-action-done teal-text text-lighten-2 medium"></i></a>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,27 @@
+<template name="postsList">
+  <div class="row">
+    <div class="col s12 m12 l10 offset-l1">
+    <div class="card z-depth-2">
+       <div class="card-image waves-effect waves-block waves-light">
+         <img class="activator" src="{{admin.blogPrimaryImage}}">
+       </div>
+       <div class="card-content">
+         <span class="card-title activator grey-text text-darken-4">{{admin.blogTitle}}<i class="mdi-navigation-more-vert right"></i></span>
+       </div>
+       <div class="card-reveal">
+         <span class="card-title grey-text text-darken-4">About <i class="mdi-navigation-close right"></i></span>
+         <p class="flow-text">
+            {{admin.blogFewWords}}
+          </p>
+       </div>
+     </div>
+   </div>
+  </div>
+
+  <div class="row">
+    {{#each posts}}
+      {{> postItem}}
+    {{/each}}
+
+  </div>
+</template>

@@ -1,0 +1,15 @@
+<template name="postItem">
+  <div class="col center-align s12 m12 l10 offset-l1">
+    <a href="{{pathFor 'postPage'}}">
+      <div class="hvr-grow z-depth-1 card article-left-align teal darken-0">
+        <div class="card-content white-text">
+          <h4>{{title}}</h4>
+          <p class="article-preview flow-text">{{addMarkdown}}</p>
+        </div>
+        <div class="teal post-date-header lighten-1 card-action">
+          <span class="white-text">{{dateCreated}}</span><i class="white-text right mdi-navigation-arrow-forward"></i>
+        </div>
+      </div>
+    </a>
+  </div>
+</template>

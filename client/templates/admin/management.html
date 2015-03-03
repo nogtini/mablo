@@ -1,0 +1,25 @@
+<template name="management">
+  <div id="test1">
+    <div class="card">
+      <div class="card-content">
+        <div class="row">
+          <a href="/admin/add">
+            <button class="no-margin btn waves-effect waves-light" type="submit" name="action">New Post
+            <i class="mdi-content-add right"></i>
+            </button>
+          </a>
+        </div>
+        <ul class="collection">
+          {{#each posts}}
+          <li class="collection-item">
+            <div>
+              {{title}}
+            <a href="{{pathFor 'editPost'}}" class="secondary-content"><i class="mdi-editor-mode-edit teal-text"></i></a>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>

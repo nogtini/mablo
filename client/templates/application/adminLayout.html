@@ -1,0 +1,14 @@
+<template name="adminLayout">
+  <div class="row">
+    <ul class="tabs">
+      <li id="management" class="tab col s6"><a>Management</a>
+      </li>
+      <li id="config" class="tab col s6"><a>Config</a>
+      </li>
+    </ul>
+    <div class="col s12 m10 offset-m1">
+      <br>
+      {{> yield}}
+    </div>
+  </div>
+</template>

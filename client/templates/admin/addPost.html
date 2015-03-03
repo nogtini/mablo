@@ -1,0 +1,41 @@
+<template name="addPost">
+  <!-- add post -->
+  <div class="row">
+    <div class="col s12 m12 l10 offset-l1">
+      <div class="card">
+        <div class= "z-depth-1 no-margin teal">
+          <div class="card-content white-text">
+            <span class="card-title">Add Post</span>
+          </div>
+        </div>
+        <div class="card-content no-padding">
+          <div class="row no-margin">
+            <form>
+              <br>
+              <div class="add-post-input row no-margin">
+                <div class="input-field col s12">
+                  <input name="title" id="post_title" type="text" class="edit-post-title">
+                  <label for="post_title">Post Title</label>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea name="addMarkdown" id="add_markdown" class="markdown materialize-textarea"></textarea>
+                    <label for="add_markdown">Add Your Markdown</label>
+                  </div>
+                </div>
+              </div>
+              <div class="card-action">
+                <button class="no-margin btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="mdi-content-send right"></i>
+                </button>
+                <a href="/admin"><button class="red lighten-2 no-margin btn waves-effect waves-light" name="action">Cancel
+                    <i class="mdi-navigation-cancel right"></i>
+                </button></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

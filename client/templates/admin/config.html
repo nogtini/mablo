@@ -1,0 +1,66 @@
+<template name="config">
+  <div id="test2">
+    <div class="card">
+      <div class="card-content">
+        <form>
+          <div class="row">
+            <h4>Blog</h4>
+            <div class="input-field col s12">
+              <i class="mdi-image-photo prefix"></i>
+              <input name="blogPrimaryImage" id="blog_primaryimage" type="text" value="{{admin.blogPrimaryImage}}" class="no-padding">
+              <label for="blog_primaryimage">Your Blog Image URL for Front Page</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="mdi-communication-comment prefix"></i>
+              <textarea name="blogFewWords" id="blog_few_words" value="{{admin.blogFewWords}}" class="materialize-textarea"></textarea>
+              <label for="blog_few_words">Say a few words about your blog to display when someone clicks your blog image</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <h4>Author</h4>
+            <div class="input-field col s12">
+              <i class="mdi-image-photo prefix"></i>
+              <input name="personalPhotoUrl" id="personal_photo_url" type="text" value="{{admin.personalPhotoUrl}}" class="no-padding">
+              <label for="personal_photo_url">Your Personal Photo URL for Author Tag</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="mdi-communication-comment prefix"></i>
+              <textarea name="fewWordsSignoff" id="few_words_signoff" value="{{admin.fewWordsSignoff}}" class="materialize-textarea"></textarea>
+              <label for="few_words_signoff">Say a few words about yourself for your signoff at the bottom of your posts</label>
+            </div>
+          </div>
+          <div class="row">
+            <h4>Social</h4>
+            <div class="input-field col s12">
+              <i class="fa fa-facebook prefix"></i>
+              <input name="facebookProfileUrl" id="facebook_profile_url" value="{{admin.facebookProfileUrl}}"  type="text" class="no-padding">
+              <label for="facebook_profile_url">Facebook Profile URL</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="fa fa-twitter prefix"></i>
+              <input name="twitterProfileUrl" id="twitter_profile_url" value="{{admin.twitterProfileUrl}}" type="text" class="no-padding">
+              <label for="twitter_profile_url">Twitter Profile URL</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="fa fa-dribbble prefix"></i>
+              <input name="dribbbleProfileUrl" id="dribbble_profile_url" type="text" value="{{admin.dribbbleProfileUrl}}" class="no-padding">
+              <label for="dribbble_profile_url">Dribbble Profile URL</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="fa fa-github prefix"></i>
+              <input name="githubProfileUrl" id="github_profile_url" type="text" value="{{admin.githubProfileUrl}}" class="no-padding">
+              <label for="github_profile_url">Github Profile URL</label>
+            </div>
+          </div>
+
+          <button class="no-margin btn waves-effect waves-light" type="submit" name="action">Save
+            <i class="mdi-content-save right"></i>
+          </button>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+</template>
