@@ -1,6 +1,9 @@
 # mablo
 Mablo, a Material Design blog
 
+### Example
+Check out [Mablo](http://mablo.meteor.com)
+
 ###To-Do
 Strip markdown from post summary on front page
 
