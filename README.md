@@ -4,6 +4,8 @@ Mablo, a Material Design blogging platform for everyone!
 ### Example
 Check out [Mablo](http://mablo.meteor.com)
 
+![image of mablo](http://i.imgur.com/Qr0uX87.jpg)
+
 ### Let's Begin
 The first time you spin up Mablo, you're going to enter your blog title, name, and magic phrase (password). To manage or make a change, just visit /admin to access the control panel where you can edit your blog settings and post content.
 
@@ -23,6 +25,8 @@ SEO
 Tags
 
 Comments
+
+More Color Schemes
 
 Crunch Materialize bugs
 
