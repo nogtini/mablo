@@ -14,10 +14,17 @@ Comments
 
 ###Packages Used
 meteor-platform
+
 d0minikk:materialize-meteor
+
 iron:router
+
 simple:highlight.js
+
 showdown
+
 joshowens:shareit
+
 fortawesome:fontawesome
+
 u2622:persistent-session
